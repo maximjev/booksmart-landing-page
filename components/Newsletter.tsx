@@ -1,9 +1,10 @@
 'use client'
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import React from "react";
 
 export const Newsletter = () => {
-    const handleSubmit = (e: any) => {
+    const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         console.log("Subscribed!");
     };
