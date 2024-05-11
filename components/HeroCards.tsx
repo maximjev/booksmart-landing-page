@@ -1,6 +1,7 @@
+'use client'
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "./ui/button";
 import {
     Card,
     CardContent,
@@ -8,11 +9,11 @@ import {
     CardHeader,
     CardTitle,
     CardFooter,
-} from "@/components/ui/card";
+} from "./ui/card";
 import { Check, Linkedin } from "lucide-react";
 import { LightBulbIcon } from "./Icons";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import steveJobs from "../assets/steve-jobs.png";
+import SteveJobs from "@/public/images/steve_jobs.png";
 
 export const HeroCards = () => {
     return (
@@ -23,7 +24,7 @@ export const HeroCards = () => {
                     <Avatar>
                         <AvatarImage
                             alt=""
-                            src={steveJobs}
+                            src={SteveJobs?.src}
                         />
                         <AvatarFallback>SH</AvatarFallback>
                     </Avatar>

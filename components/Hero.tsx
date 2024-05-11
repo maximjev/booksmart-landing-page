@@ -1,6 +1,7 @@
+'use client'
 import { Button } from "./ui/button";
 import { HeroCards } from "./HeroCards";
-import { Input } from "@/components/ui/input.tsx";
+import { Input } from './ui/input.tsx';
 
 export const Hero = () => {
   const handleSubmit = (e: any) => {

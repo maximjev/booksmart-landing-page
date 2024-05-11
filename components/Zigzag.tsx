@@ -1,6 +1,9 @@
-import calendarFrame from "../assets/calendar_frame.png";
-import bookFrame from "../assets/book_frame.png";
-import weekFrame from "../assets/week_frame.png";
+import Image from 'next/image'
+
+import CalendarFrame from '@/public/images/calendar_frame.png'
+import BookFrame from '@/public/images/book_frame.png'
+import WeekFrame from '@/public/images/week_frame.png'
+
 import { Badge } from "@/components/ui/badge.tsx";
 
 export const Zigzag = () => {
@@ -30,8 +33,8 @@ export const Zigzag = () => {
                             <div
                                 className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
                                 data-aos="fade-up">
-                                <img className="max-w-full mx-auto md:max-w-none h-auto" src={calendarFrame} width={352}
-                                     height={625} alt="Calendar Frame"/>
+                                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={CalendarFrame} width={320}
+                                     height={568} alt="Calendar Frame"/>
                             </div>
                             {/* Content */}
                             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
@@ -52,8 +55,8 @@ export const Zigzag = () => {
                             <div
                                 className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl"
                                 data-aos="fade-up">
-                                <img className="max-w-full mx-auto md:max-w-none h-auto" src={weekFrame} width={352}
-                                     height={625} alt="Features 02"/>
+                                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={WeekFrame} width={320}
+                                     height={568} alt="Features 02"/>
                             </div>
                             {/* Content */}
                             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
@@ -73,8 +76,8 @@ export const Zigzag = () => {
                             <div
                                 className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
                                 data-aos="fade-up">
-                                <img className="max-w-full mx-auto md:max-w-none h-auto" src={bookFrame} width={352}
-                                     height={625} alt="Booking frame"/>
+                                <Image className="max-w-full mx-auto md:max-w-none h-auto" src={BookFrame} width={320}
+                                     height={568} alt="Booking frame"/>
                             </div>
                             {/* Content */}
                             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
