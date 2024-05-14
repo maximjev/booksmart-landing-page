@@ -1,14 +1,9 @@
 'use client'
 import { Button } from "./ui/button";
 import { HeroCards } from "./HeroCards";
-import { Input } from './ui/input.tsx';
 import React from "react";
 
 export const Hero = () => {
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        console.log("Subscribed!");
-    };
     return (
         <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10" data-aos="fade-up">
             <div className="text-center lg:text-start space-y-6">
@@ -35,17 +30,9 @@ export const Hero = () => {
 
 
                 <div className="space-y-4 md:space-y-0 md:space-x-6 xs:w-full">
-                    <form
-                        className="flex flex-col w-full md:flex-row gap-4 md:gap-2"
-                        onSubmit={handleSubmit}
-                    >
-                        <Input
-                            placeholder="signmeup@gmail.com"
-                            className="bg-muted/50 dark:bg-muted/80 md:w-6/12 w-full"
-                            aria-label="email"
-                        />
+                    <a href="#newsletter">
                         <Button className="md:w-3/12 w-full">Get early access</Button>
-                    </form>
+                    </a>
                 </div>
             </div>
 
